@@ -39,7 +39,7 @@ public class UniversityApplication implements CommandLineRunner {
         departmentService.getAll().stream()
                 .map(Department::getName)
                 .forEach(System.out::println);
-        
+
         String input = "";
         Scanner scanner = new Scanner(System.in);
         while (!input.equals("exit")) {
